@@ -83,7 +83,8 @@ def read_file(f):
 def load_data(test_ratio=0.2, random_seed=0):
 	
 	np.random.seed(random_seed)
-
+		
+	# for A-music dataset
 	with open('ratings_Digital_Music.csv') as f:
 		u_count, i_count, total_int_tmp = read_file(f)
 
@@ -234,7 +235,7 @@ def load_teacher_trajectory(path, model_list):
 		is = list(train_mat[u].keys())
 		R[u][is] = 1.
 
-	last_max_idx = np.zeros(6, u_count))
+	last_max_idx = np.zeros((6, u_count))
 	next_idx = np.clip(last_max_idx + 1, a_min=0, a_max=3)
 
 	sorted_mat = g_torch(state_dict, torch.zeros((u_count, 6)))
