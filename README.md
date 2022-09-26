@@ -5,6 +5,8 @@ Recent recommender systems have shown remarkable performance by using a large an
 Our comprehensive experiments show that HetComp significantly improves the distillation quality and the generalization of the student model.
 
 ### Requirements
-This is an implementation of MF on A-music (Amazon-music) dataset.
+This is an implementation of HetComp on MF-Student.
 - A-music dataset can be downloaded from: http://jmcauley.ucsd.edu/data/amazon/
+- CiteULike dataset can be downloaded from: https://github.com/js05212/citeulike-t/blob/master/users.dat
+- Foursquare dataset can be downloaded from: https://github.com/allenjack/SAE-NAD
 - Required version: torch >= 1.10.1
